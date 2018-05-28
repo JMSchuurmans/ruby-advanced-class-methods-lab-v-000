@@ -44,22 +44,11 @@ class Song
   end
 
   def self.new_from_filename(file_data)
-    rows = self.split("\n")
-    songs = rows.collect do |row|
-      data = row.split(" - ")
-      artist_name = data[0]
-      name = data[1].split(".")
-
-      song = self.new
-      song.artist_name = artist_name
-      song.name = name
-      song
-    end
-    songs
+    
   end
 
   def self.create_from_filename
-
+    
   end
 
   def self.destroy_all
