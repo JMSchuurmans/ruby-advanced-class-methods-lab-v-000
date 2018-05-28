@@ -43,7 +43,7 @@ class Song
     @@all.sort_by! {|song| song.name}
   end
 
-  def self.new_from_filename(file_data)
+  def self.new_from_filename(name)
     song.name = name
     song = self.new
   end
